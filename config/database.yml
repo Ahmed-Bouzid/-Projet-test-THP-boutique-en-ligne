@@ -82,6 +82,6 @@ test:
 #
 production:
   <<: *default
-  database: marschatons_production
+  database: marsmars_production
   username: marschatons
-  password: <%= ENV['MARSCHATONS_DATABASE_PASSWORD'] %>
+  password: azerty
