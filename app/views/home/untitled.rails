@@ -1,0 +1,31 @@
+background-image: url('<%= chatchat.jpg %>');
+
+
+
+
+
+<div class="container">
+  <img src="img_snow_wide.jpg" alt="Snow" style="width:100%;">
+  <div class="centered">Centered</div>
+</div>
+
+
+
+
+
+<figure>
+<%= image_tag("chatchat.jpg", :style => 'position: relative; width: 1490px; height: auto; margin-left: -158px;') %>
+
+
+                      <figcaption>Your text</figcaption> 
+                    </figure>
+
+
+
+
+<%= image_tag("chatchat.jpg", :style="width:100%;position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);")%>
+
+                    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);

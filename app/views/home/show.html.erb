@@ -1,0 +1,16 @@
+<center>
+	
+	<ul>
+		<div style="list-style-type: none;">
+			<li><h1>Voici la fabuleuse photo de <%= @item %> !</h1></li>
+			<h3><%= image_tag("#{@image_url}.jpg", :style => 'height: 500px; width: auto;')%>
+				<li>Ce chat appartient a la <%= @item_description %>,</li>
+				<li>La valeur de ce tableau est de $<%= @item_price  %>0</h3></li>
+				<li><h2>Voulez vous l'acquerir ?</h2></li>
+			</div>
+
+		</ul>
+		<button type="button" >Add to cart</button>
+	</center>
+
+
