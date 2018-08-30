@@ -2,7 +2,7 @@
 	
 	<ul>
 		<div style="list-style-type: none;">
-			<li><h1>Voici la fabuleuse photo de <%= @item %> !</h1></li>
+			<li><h1>Voici la fabuleuse photo de <%= @item.title %> !</h1></li>
 			<h3><%= image_tag("#{@image_url}.jpg", :style => 'height: 500px; width: auto;')%>
 				<li>Ce chat appartient a la <%= @item_description %>,</li>
 				<li>La valeur de ce tableau est de $<%= @item_price  %>0</h3></li>
@@ -11,6 +11,12 @@
 
 		</ul>
 		<button type="button" >Add to cart</button>
+
+		<%= link_to "Add to cart", add_item_path(@item.id), class: "nav-link"  %>
+		
+		<%= link_to "move from cart", delete_item_path(@item.id), class: "nav-link"  %>
+
+
 	</center>
 
 

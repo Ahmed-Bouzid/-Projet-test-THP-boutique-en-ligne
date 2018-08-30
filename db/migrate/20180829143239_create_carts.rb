@@ -1,8 +1,10 @@
 class CreateCarts < ActiveRecord::Migration[5.2]
-  def change
-    create_table :carts do |t|
-
-      t.timestamps
-    end
-  end
+	def change
+		create_table :carts do |t|
+			t.string :title
+			t.decimal :price
+			t.string :image_url
+			t.timestamps
+		end
+	end
 end
