@@ -1,25 +1,26 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Link of the application in production deployed on Heroku : https://marschaton.herokuapp.com
 
-Things you may want to cover:
 
-* Ruby version
+Ecommerce application created with Ruby on Rails using :
 
-* System dependencies
+* Stripe for payement
 
-* Configuration
+* Action Mailer & Mailjet
 
-* Database creation
+*  Active Storage, AWS S3
 
-* Database initialization
+* Devise
 
-* How to run the test suite
+Installation :
+cd ton_dossier/    
+Git clone https://github.com/tfcdg1/marschatons.git    
+cd ton_dossier/email-viewer    
+bundle install    
+rails db:create db:migrate db:seed    
+rails s    
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
 # marschatons
+
+Team work made by Ahmed Bouzid, Thomas Fernandez, Romain Cestari
