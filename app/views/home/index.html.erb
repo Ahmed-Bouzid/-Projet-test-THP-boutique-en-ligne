@@ -101,22 +101,18 @@
           <div class=" d-none d-lg-inline-block d-xl-inline-block">
             <ul class="navbar-nav ml-auto" data-hover="dropdown">
               <!-- Fin Boutons NavBar -->
-
               <!-- Debut Cart -->
               <li class="nav-item nav-item-icon hidden-md-down">
-                <a href="#" class="nav-link btn-st-trigger" data-effect="st-effect-1">
+                <%= link_to cart_path(@cart.id) do %>
                   <span class="fa fa-bars">Chariot</span>
-                </a>
+                <%end%>
               </li>
               <!-- Fin Cart -->
-
             </ul>
           </div>
         </div>
       </nav>
     </div>
-
-
     <div class="container mask-container">
       <div class="row">
         <div class="col-lg-5 col-md-7">

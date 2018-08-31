@@ -1,0 +1,21 @@
+<H1>Ton chariot</H1>
+
+<hr>
+<% @cart.items.each do |item| %>
+
+	<%= item.title %> <br>
+	<%= item.price.to_f.round(2) %> $ <br>
+
+
+<hr>
+<%end%>
+
+
+Total : 
+$ <%= @cart.total_price %>
+
+<div>
+	<%= link_to new_order_path do %> 
+	<span>passer la commande</span>
+	<%end%> 
+</div>

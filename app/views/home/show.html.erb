@@ -12,7 +12,7 @@
 		</ul>
 		<button type="button" >Add to cart</button>
 
-		<%= link_to "Add to cart", add_item_path(@item.id), class: "nav-link"  %>
+		<%= link_to "Add to cart", add_item_path(cart_id: session[:cart_id], item_id: @item.id), class: "nav-link"  %>
 		
 		<%= link_to "move from cart", delete_item_path(@item.id), class: "nav-link"  %>
 

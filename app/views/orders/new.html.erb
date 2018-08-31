@@ -1,0 +1,22 @@
+<H1>Votre commande</H1>
+
+<hr>
+<% @cart.items.each do |item| %>
+	<%= item.title %> 
+	<%= item.price %> <br>
+<hr>
+<%end%>
+
+Total :
+<%= @amount %> 
+
+
+
+<div>
+	<%= link_to new_charge_path(amount: @amount) do %>
+
+		Passez a la caisse
+
+	<%end%>
+</div>
+
